@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './css/Search.css'
 import { fetchApi } from './api'
 import BrewList from './BrewList'
+import BrewDetails from '../BrewDetails'
+import { Routes, Route, Link } from 'react-router-dom'
 
 
 const Search = () => {
@@ -15,9 +17,6 @@ const Search = () => {
     setBrewy(apiRes)
   }
 
-  const convertCity = (city) => {
-    city.trim().toLowerCase().split(' ').join('_')
-  }
 
   const clearInput = () => {
     setCity('')
@@ -48,6 +47,10 @@ const Search = () => {
       </form>
       <section className='brew-grid'>
         <BrewList breweries={brewy}/>
+        <Routes>
+          <Route path='/' />
+          <Route path='details' element={<BrewDetails />} />
+        </Routes>
       </section>
     </>
   )

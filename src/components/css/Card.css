@@ -11,6 +11,11 @@
 }
 
 .brewery-card p {
-  margin-top: 5px;
+  margin: 2px;
   padding-top: 3px;
+}
+
+.link-card {
+  text-decoration: none;
+  color: white;
 }
