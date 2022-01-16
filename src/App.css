@@ -2,7 +2,7 @@
 
 header {
   margin-top: 5%;
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
   width: 100%;
 }
 
@@ -12,9 +12,9 @@ header {
 
 .main-container {
   display: flex;
-  border: 3px solid white;
-  width: 100%;
-  height: 65vh;
+  /* border: 3px solid white; */
+  width: 100vw;
+  height: 100vh;
 }
 
 input {

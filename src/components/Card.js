@@ -5,7 +5,7 @@ const Card = ({name, street}) => {
   
 
   return (
-    <div className='brewery'>
+    <div className='brewery-card'>
       <p>{name}</p>
       <p>{street}</p>
     </div>

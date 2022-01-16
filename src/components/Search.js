@@ -30,7 +30,7 @@ const Search = () => {
         <p className='find-text'>Find a brewery near you</p>
         <p className='search-text'>Search for a city:</p>
         <div>
-          <input
+          <input className='input'
             type='text'
             placeholder='e.g., Denver'
             value={city}
