@@ -4,7 +4,7 @@ import Card from './Card'
 
 const BrewList = (breweries) => {
 
-  console.log(breweries, 'breweries')
+  // console.log(breweries, 'breweries')
 
   const brewyDetails = breweries.breweries.map(brewy => {
 

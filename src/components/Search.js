@@ -10,10 +10,15 @@ const Search = () => {
 
 
   const handleSearch = async () => {
-    const apiRes = await fetchApi(city)
+    const convertCity = city.trim().toLowerCase().split(' ').join('_')
+    const apiRes = await fetchApi(convertCity)
     setBrewy(apiRes)
   }
-  // console.log(brewy, 'brewy')
+
+  const convertCity = (city) => {
+    city.trim().toLowerCase().split(' ').join('_')
+  }
+
   const clearInput = () => {
     setCity('')
   }
