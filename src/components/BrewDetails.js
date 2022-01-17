@@ -37,8 +37,8 @@ const BrewDetails = () => {
         </article>
 
         <div className='links-section'>
-          <a href={brewyDetails.website_url} target='blank'><button>Visit Website</button></a>
-          <a href={`https://www.google.com/maps/search/?api=1&query=${brewyDetails.id}`} target='blank'><button>Get Directions</button></a>
+          <a href={brewyDetails.website_url} target='blank'><button className='link-btn'>Visit Website</button></a>
+          <a href={`https://www.google.com/maps/search/?api=1&query=${brewyDetails.id}`} target='blank'><button className='link-btn'>Get Directions</button></a>
           <Link to={'/'}>
             <button className='back-btn'>Back</button>
           </Link>

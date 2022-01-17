@@ -38,7 +38,7 @@ a {
 
 }
 
-button {
+.link-btn {
   width: 10em;
   height: 3em;
   font-size: 30px;
@@ -58,7 +58,11 @@ button:hover {
 }
 
 .back-btn {
+font-size: 15px;
+  height: 5em;
   width: 5rem;
   border-radius: 50%;
-  margin-left: 6rem;
+  margin-left: 5rem;
+   border:none;
+   background-color: #dbb26f;
 }

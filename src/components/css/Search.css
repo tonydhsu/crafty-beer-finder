@@ -22,7 +22,13 @@
   font-size: 50px;
 }
 
-.input, button {
+.search-btn {
+  background-color: #dbb26f;
+  width: 5rem;
+  border-radius: 10px;
+}
+
+.input, .search-btn {
   margin-bottom: 60%;
 }
 
