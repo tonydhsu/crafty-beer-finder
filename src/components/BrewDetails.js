@@ -6,6 +6,7 @@ import { Link, useParams } from 'react-router-dom'
 
 
 
+
 const BrewDetails = () => {
     const brewyId = useParams().brewyId
    
@@ -38,6 +39,9 @@ const BrewDetails = () => {
         <div className='links-section'>
           <a href={brewyDetails.website_url} target='blank'><button>Visit Website</button></a>
           <a href={`https://www.google.com/maps/search/?api=1&query=${brewyDetails.id}`} target='blank'><button>Get Directions</button></a>
+          <Link to={'/'}>
+            <button className='back-btn'>Back</button>
+          </Link>
 
         </div>
         </div>

@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  font-family: 'IM Fell English SC', serif;
+
 
 }
 
@@ -39,7 +41,7 @@ a {
 button {
   width: 10em;
   height: 3em;
-  font-size: 20px;
+  font-size: 30px;
   border:none;
   background-color: #dbb26f;
   border-radius: 10px;
@@ -51,4 +53,12 @@ button:hover {
 
 .links-section {
   display: flex;
+  margin-top: 2rem;
+  margin-left: 9rem;
+}
+
+.back-btn {
+  width: 5rem;
+  border-radius: 50%;
+  margin-left: 6rem;
 }
