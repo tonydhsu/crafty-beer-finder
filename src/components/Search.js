@@ -46,11 +46,7 @@ const Search = () => {
         </div>
       </form>
       <section className='brew-grid'>
-        <BrewList breweries={brewy}/>
-        <Routes>
-          <Route path='/' />
-          <Route path='details' element={<BrewDetails />} />
-        </Routes>
+    {brewy && <BrewList breweries={brewy}/>}        
       </section>
     </>
   )

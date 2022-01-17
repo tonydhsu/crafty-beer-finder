@@ -3,4 +3,9 @@ const fetchApi = (city) => {
   .then(res => res.json())
 }
 
-export {fetchApi}
+const fetchDetail = (brewyId) => {
+  return fetch(`https://api.openbrewerydb.org/breweries/${brewyId}`)
+  .then(res => res.json())
+}
+
+export {fetchApi, fetchDetail}

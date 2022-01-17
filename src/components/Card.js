@@ -8,12 +8,12 @@ const Card = ({id, name, street}) => {
 
   return (
     <>
-        <Link to={`/details/${id}`} className='link-card'>
+       
           <div className='brewery-card' key={id} >
             <p>{name}</p>
             <p>{street}</p>
           </div>
-        </Link>
+        
         
      
     

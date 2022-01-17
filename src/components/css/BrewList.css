@@ -11,3 +11,7 @@
     overflow-y: scroll;
 }
 
+.link-card {
+  text-decoration: none;
+  color: white;
+}
