@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './css/Search.css'
 import { fetchApi } from './api'
 import BrewList from './BrewList'
-import BrewDetails from '../BrewDetails'
+import BrewDetails from './BrewDetails'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -46,7 +46,7 @@ const Search = () => {
         </div>
       </form>
       <section className='brew-grid'>
-    {brewy && <BrewList breweries={brewy}/>}        
+        <BrewList breweries={brewy}/>      
       </section>
     </>
   )

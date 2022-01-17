@@ -1,5 +1,5 @@
 import React from 'react'
-import BrewDetails from '../BrewDetails'
+import BrewDetails from './BrewDetails'
 import './css/Card.css'
 import { Link } from "react-router-dom"
 
