@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './css/Search.css'
 import { fetchApi } from './api'
 import BrewList from './BrewList'
+import BrewDetails from '../BrewDetails'
+import { Routes, Route, Link } from 'react-router-dom'
 
 
 const Search = () => {
@@ -10,10 +12,12 @@ const Search = () => {
 
 
   const handleSearch = async () => {
-    const apiRes = await fetchApi(city)
+    const convertCity = city.trim().toLowerCase().split(' ').join('_')
+    const apiRes = await fetchApi(convertCity)
     setBrewy(apiRes)
   }
-  // console.log(brewy, 'brewy')
+
+
   const clearInput = () => {
     setCity('')
   }
@@ -30,7 +34,7 @@ const Search = () => {
         <p className='find-text'>Find a brewery near you</p>
         <p className='search-text'>Search for a city:</p>
         <div>
-          <input
+          <input className='input'
             type='text'
             placeholder='e.g., Denver'
             value={city}
@@ -43,6 +47,10 @@ const Search = () => {
       </form>
       <section className='brew-grid'>
         <BrewList breweries={brewy}/>
+        <Routes>
+          <Route path='/' />
+          <Route path='details' element={<BrewDetails />} />
+        </Routes>
       </section>
     </>
   )

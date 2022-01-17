@@ -4,25 +4,30 @@ import Card from './Card'
 
 const BrewList = (breweries) => {
 
-  console.log(breweries, 'breweries')
+  // console.log(breweries, 'breweries')
 
-  const brewyDetails = breweries.map(brewy => {
+  const brewyDetails = breweries.breweries.map(brewy => {
 
     return (
-     <Card
-        key={brewy.id}
-        name={brewy.name}
-        street={brewy.street}
-
-     />
+      <Card
+          key={brewy.id}
+          type={brewy.brewery_type}
+          name={brewy.name}
+          city={brewy.city}
+          street={brewy.street}
+      />
+    
     )
 
   })
 
   return (
-    <div className='brewy-container'>
+    <>
+      <div className='brewy-container'>
       {brewyDetails}
-    </div>
+      </div>
+    
+    </>
   )
 }
 

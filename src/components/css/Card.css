@@ -1,0 +1,21 @@
+.brewery-card {
+  background-color: #562d26cc;
+  font-size: 30px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 4em;
+  max-width: 18em;
+
+
+}
+
+.brewery-card p {
+  margin: 2px;
+  padding-top: 3px;
+}
+
+.link-card {
+  text-decoration: none;
+  color: white;
+}
