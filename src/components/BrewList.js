@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './css/BrewList.css'
 import Card from './Card'
-import BrewDetails from '../BrewDetails'
+import BrewDetails from './BrewDetails'
 import { Routes, Route, Link } from 'react-router-dom'
 
 
@@ -23,11 +23,8 @@ const BrewList = (breweries) => {
             street={brewy.street}
             />
           </Link>
-        
       </>
-    
     )
-
   })
 
   return (
@@ -35,9 +32,9 @@ const BrewList = (breweries) => {
       <div className='brewy-container'>
         {brewyDetails}
       </div>
-      <Routes>
-        {/* <Route path='/:brewyId' element={<BrewDetails />} /> */}
-      </Routes>
+      {/* <Routes>
+       
+      </Routes> */}
     </>
   )
 }
