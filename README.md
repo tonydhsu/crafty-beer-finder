@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Crafty Beer Finder :beers:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Turing FEE Final Solo Project 2108
+[Deployed App](https://crafty-beer-finder.herokuapp.com/)
 
-## Available Scripts
+## Table of Contents
+-  [Abstract](#Abstract)
+-  [Technologies](#Technologies)
+-  [Illustrations](#Illustrations)
+-  [Wins](#Wins)
+-  [Challenges](#Challenges)
+-  [Additions](#Additions)
+-  [Contributors](#Contributors)
+-  [Specs](#Specs)
 
-In the project directory, you can run:
+## Abstract
+An app that quenches your thirst!  Have you traveled to a city and wanted to relax with a beer from your long trip?  Or maybe you're tired of drinking canned beer and want to try something new?  With the Crafty Beer Finder app you can search for breweries in your city!  Get brewery information such as brewery type, address, phone number, website, or directions.  A great app to take around with you!
 
-### `npm start`
+## Technologies
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  ![image](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)  ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)  ![image](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)   
+  ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  ![image](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+  
+  ## Illustrations
+  ![SScraftbeer](https://user-images.githubusercontent.com/70819338/149991059-feeeb9db-817b-4ef8-ac72-43069977a7a5.png)  
+  
+  ![craftybeer-small](https://user-images.githubusercontent.com/70819338/150011252-e150f16f-58cb-4f9b-ad92-46b29b09bab6.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
+  
+  ## Wins
+  - Successfully fetch search data and individual brewery data from api
+  - Router deployed
+  
+  ## Challenges
+  - Going back does not redisplay search results
+  
+  ## Additions
+  - Adding a brewery to favorites 
+  - Adding a yelp api for reviews
+  
+  ## Contributors
+  [Tony Hsu](https://github.com/tonydhsu)
+  ## Specs
+  [Showcase Project Specs](https://frontend.turing.edu/projects/module-3/showcase.html)
