@@ -2,9 +2,6 @@ import React, {useState} from 'react'
 import './css/Search.css'
 import { fetchApi } from './api'
 import BrewList from './BrewList'
-import BrewDetails from './BrewDetails'
-import { Routes, Route, Link } from 'react-router-dom'
-
 
 const Search = () => {
   const [city, setCity] = useState('')
@@ -15,14 +12,14 @@ const Search = () => {
     const convertCity = city.trim().toLowerCase().split(' ').join('_')
     const apiRes = await fetchApi(convertCity)
     setBrewy(apiRes)
-    saveToStorage()
+    // saveToStorage()
   }
 
-  const saveToStorage = () => {
-    localStorage.setItem('brewyResults', brewy)
-    console.log(localStorage.getItem('brewyResults'), 'localstoage')
+  // const saveToStorage = () => {
+  //   localStorage.setItem('brewyResults', brewy)
+  //   console.log(localStorage.getItem('brewyResults'), 'localstoage')
 
-  }
+  // }
 
 
   const clearInput = () => {
@@ -36,7 +33,6 @@ const Search = () => {
     clearInput()
   }
 
-  
   return (
     <>
       <form className='form-section' onSubmit={handleClick}>
@@ -48,10 +44,8 @@ const Search = () => {
             placeholder='e.g., Denver'
             value={city}
             onChange={(event) => setCity(event.target.value)}
-            />
-          <button className='search-btn'
-          type='submit'
-          >Search</button>
+          />
+          <button className='search-btn'type='submit'>Search</button>
         </div>
       </form>
       <section className='brew-grid'>
@@ -59,9 +53,6 @@ const Search = () => {
       </section>
     </>
   )
-     
-    
-      
 }
 
 export default Search

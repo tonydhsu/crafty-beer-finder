@@ -3,8 +3,6 @@ import './css/Header.css'
 import title from '../craftybeer-title.png'
 import {Link} from 'react-router-dom'
 
-
-
 const Header = () => {
   return (
     <header className="header">
