@@ -6,10 +6,18 @@
   grid-gap: 2%;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-evenly;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .link-card {
   text-decoration: none;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .brewy-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+

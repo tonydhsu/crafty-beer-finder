@@ -12,15 +12,7 @@ const Search = () => {
     const convertCity = city.trim().toLowerCase().split(' ').join('_')
     const apiRes = await fetchApi(convertCity)
     setBrewy(apiRes)
-    // saveToStorage()
   }
-
-  // const saveToStorage = () => {
-  //   localStorage.setItem('brewyResults', brewy)
-  //   console.log(localStorage.getItem('brewyResults'), 'localstoage')
-
-  // }
-
 
   const clearInput = () => {
     setCity('')
@@ -29,7 +21,6 @@ const Search = () => {
   const handleClick = (event) => {
     event.preventDefault()
     handleSearch()
-    // saveToStorage()
     clearInput()
   }
 
@@ -38,7 +29,7 @@ const Search = () => {
       <form className='form-section' onSubmit={handleClick}>
         <p className='find-text'>Find a brewery near you</p>
         <p className='search-text'>Search for a city:</p>
-        <div>
+        <div className='input-search'>
           <input className='input'
             type='text'
             placeholder='e.g., Denver'
@@ -49,7 +40,7 @@ const Search = () => {
         </div>
       </form>
       <section className='brew-grid'>
-        <BrewList breweries={brewy}/>      
+        <BrewList breweries={brewy}/>
       </section>
     </>
   )

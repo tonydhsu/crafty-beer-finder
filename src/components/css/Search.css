@@ -1,27 +1,29 @@
 .form-section {
   margin: 0;
+  margin-left: 5%;
   display:flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 80%;
 }
 
 .find-text {
   margin-bottom: 5%;
   color:rgb(231, 209, 209);
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .search-text {
   color:rgb(231, 209, 209);
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .search-btn {
   background-color: #dbb26f;
-  width: 5rem;
+  width: 90px;
   border-radius: 10px;
+  border: none;
 }
 
 .input {
@@ -34,4 +36,16 @@
 
 .brew-grid {
   width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .input-search {
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-search {
+    width: 40px;
+  }
 }

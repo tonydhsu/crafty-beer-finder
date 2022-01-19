@@ -1,9 +1,9 @@
 import React from 'react'
-import './App.css';
-import Search from './components/Search'
+import './css/App.css';
+import Search from './Search'
 import { Routes, Route, Link } from 'react-router-dom'
-import BrewDetails from './components/BrewDetails';
-import Header from './components/Header'
+import BrewDetails from './BrewDetails';
+import Header from './Header'
 
 const App =() => {
   
