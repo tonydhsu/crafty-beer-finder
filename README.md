@@ -14,7 +14,8 @@
 -  [Specs](#Specs)
 
 ## Abstract
-An app that quenches your thirst!  Have you traveled to a city and wanted to relax with a beer from your long trip?  Or maybe you're tired of drinking canned beer and want to try something new?  With the Crafty Beer Finder app you can search for breweries in your city!  Get brewery information such as brewery type, address, phone number, website, or directions.  A great app to take around with you!
+An app that quenches your thirst!  Have you traveled to a city and wanted to relax with a beer from your long trip?  Or maybe you're tired of drinking canned beer and want to try something new?  With the Crafty Beer Finder app you can search for breweries in your city!  Get brewery information such as brewery type, address, phone number, website, or directions.  A great app to take around with you!  
+App uses [Open Brewery DB API](https://www.openbrewerydb.org/)
 
 ## Technologies
 ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  ![image](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)  ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)  ![image](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)   
